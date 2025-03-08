@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: Merriweather, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://images.wallpapersden.com/image/download/8-bit-programmer-4k-pixel-art_bmdpZ2qUmZqaraWkpJRobWllrWdma2U.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    color: white;
+}
+
+header {
+    background-color: #503c65;
+    color: #fff;
+    padding: 10px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    opacity: 90%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin-top: 28px;
+}
+
+nav ul li {
+    margin: 0 15px;   
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    scroll-margin-top: 130px;
+    padding: 20px 0;
+}
+
+#about h2 {
+  font-family: 'Playfair Display';
+  font-size: 3em;
+}
+
+#about p {
+    font-size: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+#projects {
+    margin-top: 40px;
+    display: grid;
+    margin: auto;
+    scroll-margin-top: 130px;
+    gap: 20px;
+}
+
+#projects h2{
+    font-family: 'Pacifico';
+    font-size: 48px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-left: 20px;
+}
+
+.project-card {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card::before {
+    content: '';
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.project-card:hover::before {
+    opacity: 0.3; 
+}
+
+#project1::before {
+    background-image: url('https://imgcdn.stablediffusionweb.com/2024/11/22/20b46fcd-2870-4545-8696-e045abb5cb18.jpg');
+} 
+
+#project2::before {
+    background-image: url('https://images.wallpapersden.com/image/download/8-bit-programmer-4k-pixel-art_bmdpZ2qUmZqaraWkpJRobWllrWdma2U.jpg');
+}   
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+#contact{
+    font-family: 'Oswald';
+    font-size:24px;
+    margin-left: 20px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1c86ee;
+}
+
+footer {
+    background-color: #503c65;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 90%;
+}
+
+footer > ul{
+    list-style-type: none;
+}
+
+

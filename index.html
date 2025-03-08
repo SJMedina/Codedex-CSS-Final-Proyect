@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500;600&family=Pacifico&family=Playfair Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="personal_website.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+          <h1>Santiago Medina</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://i.pinimg.com/736x/cb/1e/76/cb1e762650ca3dfb24a0312956d4e0f9.jpg" alt="My Photo" class="profile-pic">
+            <p>Hi! I'm Santiago, a Systems Engineering student with a passion for solving complex problems and creating impactful software solutions. My current goal is to develop my own AI assistant and advance the cybersecurity industry.</p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+            <div class="project-card" id="project1">
+                <h3>HTML Final Project | Codédex</h3>
+                <p>This is the project I made for the HTML course in Codédex.</p>
+                <a target="_blank" href="https://github.com/SJMedina/Codedex-HTML-Final-Proyect.git">View Code</a> | <a target="_blank" href="https://sjmedina.github.io/Codedex-HTML-Final-Proyect/">Live Demo</a>
+            </div>
+            <div class="project-card" id="project2">
+                <h3>CSS Final Project | Codédex</h3>
+                <p>This is the project I made for the CSS course in Codédex.</p>
+                <a target="_blank" href="#">View Code</a> | <a target="_blank" href="#">Live Demo</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="5" required placeholder="This is only a demo, it does not work"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Santiago Medina</p>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
